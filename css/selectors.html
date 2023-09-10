@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Layout Intro</title>
+        <!-- <link rel="stylesheet" href="style.css" /> -->
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            h1{
+                color:#f00;
+            }
+            p{
+                color:#00f
+            }
+            #header{
+                border: 1px solid #f00; 
+                height: 50px;
+                background-color: #f000f0;
+            }
+            .bodyDiv{
+                border: 1px solid #0f0; height: 400px;
+                background-color: #c5ce8f;
+            }
+            .body-box{
+                margin: 10px;
+                border: 1px solid rgb(225, 50, 167); height: 200px; width: 30%;float: left;
+                background-image: url('../images/image.jpg');
+                background-position: center;
+                background-size: cover;
+                border-radius: 10%;
+                box-shadow: 0px 0px 10px 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Header START -->
+        <div id="header">
+            <h1>Header</h1>
+        </div>
+        <!-- Header END -->
+        <!-- Body START -->
+        <div class="bodyDiv">
+            <h1>This is body</h1>
+            <p>This is paragraph</p>
+            <div class="body-box">
+                
+            </div>
+            <div class="body-box">
+                
+            </div>
+            <div  class="body-box">
+                
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>john@gmail.com</td>
+                        <td>9876542015</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Body END -->
+        <!-- Footer START -->
+        <div style="border: 1px solid #00f; height: 30px;"></div>
+        <!-- Footer END -->
+    </body>
+</html>
