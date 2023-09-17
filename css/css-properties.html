@@ -2,20 +2,93 @@
 <html>
     <head>
         <title>CSS Properties</title> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
+            /* Background Properties */
            .bg{
             background-color: #ff0000;
             background-image: url(../images/pattern.jpg);
             background-position: center;
             background-size: cover;
-            height: 500px;
+            height: 400px;
+            width: 400px;
+            border:1px solid #00f;
             /* background:#ff0000 */
+           }
+           /* Margin and Padding */
+           .head1{
+            border-left-color: #f00;
+            border-left-style:solid;
+            border-left-width: 2px;
+
+            border-top-color: #f00;
+            border-top-style:solid;
+            border-top-width: 2px;
+
+            border-bottom-color: #f00;
+            border-bottom-style:solid;
+            border-bottom-width: 2px;
+
+            border-right:1px dashed #f00;
+            background-color: #000;
+            /* border:1px solid #f00; */
+            margin:50px;
+            padding:40px;
+            /* Z-Index */
+            z-index: 99999999
+            
            } 
+           .smiley{
+            position:absolute;
+            /* position:relative; */
+            /* position:fixed; */
+            top:0;
+            right:45%;
+           
+           }
+           .navbar{
+            list-style-type: none;
+            border: 1px solid #0f0;
+            height: 30px;
+            text-align: right;
+            
+           }
+           .navbar li{
+            float:right;
+            margin:5px
+            
+           }
+           .navbar li a{
+            color:#d3b80b;
+            text-decoration: none;
+        
+           }
+           /* .navbar li:last-child{
+            float: right;
+           } */
+           .navbar li a:hover{
+                color: #F00;
+            }
+            .navbar li a img{
+                width: 10px;
+                height: 10px;
+            }
         </style>       
     </head>
     <body>
-       <div class="bg">
-            <h1>Background Property</h1>
+        <ul class="navbar">
+            <li><a href="home.html"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-user"></i>About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">
+                <img src="../images/contact.png" />
+                </a></li>
+        </ul>
+        <div class="bg">
+            <h1 class="head1">Background Property</h1>
         </div>
+        <img class="smiley" src="../images/smiley.png" />
+
+        
     </body>
 </html>

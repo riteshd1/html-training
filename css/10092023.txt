@@ -8,3 +8,26 @@ links
 text
 position
 z-index
+
+*pseudo classes
+
+Inline CSS
+On Page CSS
+External CSS
+
+
+Selectors:
+1. tag Selectors
+2. ID selector
+3. Class Selector
+
+R G B
+
+#0000
+
+
+
+0-255
+R => 0 -f
+G => 0 -f
+B => 0 -f
