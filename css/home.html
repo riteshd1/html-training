@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Properties Example 2</title> 
+          <style>
+            .borders{
+                list-style-type: none;
+                border-left-color: #ccc;
+                border-left-style: solid;
+
+                border-top-color:#f00 ;
+                border-top-width: 2px;
+                border-top-style: dashed;
+
+                border-bottom: 2px dotted #00f;
+                border-right: 2px solid #000;
+
+                border-width: 2px;
+                 /* border-color: #F00; */
+                /* border-style: solid; */ 
+                /* border:1px solid #ccc */
+                clear: both;
+                height: 200px;
+                background-color: #f00;
+            }
+
+            .navbar{
+                list-style-type: none;
+                /* border: 1px solid #000; */
+            }
+            .navbar li{
+                float: left;
+                /* border: 1px solid #000; */
+                /* margin:10px; */
+                padding:10px;
+            }
+            /* .navbar li:last-child{clear: both;} */
+          </style> 
+    </head>
+    <body>        
+        <ul class="navbar" type="none">
+            <li><a href="pages/home.html">Home</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/service.html">Services</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+        <div class="borders"></div>
+    </body>
+</html>
