@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Tags Examples</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+            width: 400px;
+        }
+
+        table td {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Form Tags</h3>
+    <form action="register.php" method="post">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Full Name</td>
+                    <td>
+                        <input required="true" type="text" name="fullname" placeholder="Enter fullname" value="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input type="email" name="email" placeholder="Enter email" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="password" name="password" placeholder="Enter password" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td>
+                        <input type="date" name="dob" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        Male: <input type="radio" name="gender" value="Male" />
+                        Female: <input type="radio" name="gender" value="Female" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobbies</td>
+                    <td>
+                        <input type="checkbox" name="hobbies" value="Cricket" />Cricket
+                        <input type="checkbox" name="hobbies" value="BookReading" />Book reading
+                        <input type="checkbox" name="hobbies" value="Travelling" />Travelling
+                        <input type="checkbox" name="hobbies" value="Singing" />Singing
+                    </td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td>
+                        <select name="city">
+                            <option value="">--city--</option>
+                            <option value="nagpur">Nagpur</option>
+                            <option value="pune">Pune</option>
+                            <option value="mumbai">Mumbai</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Courses Interseted In</td>
+                    <td>
+                        <select name="course" multiple="true">
+                            <option value="">--course--</option>
+                            <option value="ReactJS">ReactJS</option>
+                            <option value="Javascript">Javascript</option>
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="NodeJS">NodeJS</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Feedback</td>
+                    <td>
+                        <textarea name="Feedback" cols="40" rows="5"></textarea>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                    <td><button type="reset">Reset</button></td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </form>
+</body>
+
+</html>
