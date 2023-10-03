@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Table Example</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .table-red th {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-primary h2">Bootstrap Table Example!</h1>
+    <div class="table-responsive">
+        <table style="height: 400px;" class="table  table-bordered table-sm border-danger  table-hover">
+            <thead class="align-top">
+                <tr class="table-red">
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-red align-middle">
+                    <td>Rohit</td>
+                    <td>rohit@gmail.com</td>
+                    <td>9876543210</td>
+                    <td>Nagpur</td>
+                </tr>
+                <tr class="table-active align-top">
+                    <td>Kaustubh</td>
+                    <td>Kaustubh@gmail.com</td>
+                    <td>9876543210</td>
+                    <td>Nagpur</td>
+                </tr>
+                <tr class="align-bottom">
+                    <td>Ravi</td>
+                    <td>ravi@gmail.com</td>
+                    <td>9876543210</td>
+                    <td>Nagpur</td>
+                </tr>
+                <tr>
+                    <td>Swapnil</td>
+                    <td>Swapnil@gmail.com</td>
+                    <td>9876543210</td>
+                    <td>Nagpur</td>
+                </tr>
+                <tr>
+                    <td>Shrutika</td>
+                    <td>Shrutika@gmail.com</td>
+                    <td>9876543210</td>
+                    <td>Nagpur</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1>Nested Tables</h1>
+        <table class="table  table-bordered table-sm border-danger  table-hover">
+            <thead class="align-top">
+                <tr class="table-red">
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-red align-middle">
+                    <td>Rohit</td>
+                    <td>rohit@gmail.com</td>
+                    <td>9876543210</td>
+                    <td>Nagpur</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Obtained Marks</th>
+                                    <th>Out of</th>
+                                    <th>Result</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr  class="table-success">
+                                    <td>HTML</td>
+                                    <td>50</td>
+                                    <td>100</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr  class="table-danger">
+                                    <td>CSS</td>
+                                    <td>20</td>
+                                    <td>100</td>
+                                    <td>Fail</td>
+                                </tr>
+                                <tr  class="table-warning">
+                                    <td>Javascript</td>
+                                    <td>35</td>
+                                    <td>100</td>
+                                    <td>Pass</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="table-active align-top">
+                    <td>Kaustubh</td>
+                    <td>Kaustubh@gmail.com</td>
+                    <td>9876543210</td>
+                    <td>Nagpur</td>
+                </tr>
+                <tr class="align-bottom">
+                    <td>Ravi</td>
+                    <td>ravi@gmail.com</td>
+                    <td>9876543210</td>
+                    <td>Nagpur</td>
+                </tr>
+                <tr>
+                    <td>Swapnil</td>
+                    <td>Swapnil@gmail.com</td>
+                    <td>9876543210</td>
+                    <td>Nagpur</td>
+                </tr>
+                <tr>
+                    <td>Shrutika</td>
+                    <td>Shrutika@gmail.com</td>
+                    <td>9876543210</td>
+                    <td>Nagpur</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

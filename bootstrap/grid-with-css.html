@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Grid Example</title>
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet" /> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .container{
+            width: 100%;
+            border: 2px solid #190404;
+            height: 500px;
+        }
+        .box{
+            width: 24% ;
+            background-color: antiquewhite;
+            height: 300px;
+            float: left;
+            margin:5px
+        }
+        .box2{
+            background-color: aquamarine;
+        }
+        .box3{
+            background-color: rgb(95, 198, 15);
+        }
+        .box4{
+            background-color: rgb(198, 12, 152);
+        }
+        @media (min-width:380px) {
+            .box{
+                width: 98% !important;
+            } 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>
