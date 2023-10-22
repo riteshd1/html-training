@@ -1,0 +1,80 @@
+HTML
+-Tags
+-Attributes
+-H1
+-Div
+-Span
+-Doctype
+-Head
+-Title
+-Table
+  -thead
+  -tbody
+  -tfoot
+  -tr
+  -td
+  -th
+-List
+  -ul
+  -ol
+  -li
+-Form
+  -input
+    -text
+    -email
+    -number
+    -password
+    -button
+    -checkbox
+    -radio
+    -date
+    -range
+    -file
+  -textarea
+  -select
+   -options
+  -button  
+-Link <link href="style.css" rel="stylesheet" />
+-Anchor
+
+CSS
+-types
+  - Inline CSS
+  -On Page CSS
+  -External CSS
+-selectors
+  -Tag Selector
+  -ID selector
+  -class selector
+-Layout Structure
+-Box Model
+-CSS Properties
+  -border
+  -background
+  -z-index
+  -position
+  -margin, padding, height, width
+  -float
+  -text-decoration
+  -font
+-Nav Bar
+-Layout Example
+-Media Queries
+
+Bootstrap
+-Intro,Installation
+- Grid System
+-Layout
+-Tables
+-Forms
+-Positions
+-Navbar
+-List
+-Uititly Classes
+-Button
+-Lists
+-Accordion
+-Colors - Text, Bg color, Btn,Alerts
+-Example - Student registation form
+
+

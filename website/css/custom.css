@@ -1,0 +1,21 @@
+.get-started-btn{
+    border-radius: 100px;
+    color: #fff;
+    border-color:#fff;
+}
+.get-started-btn:hover{
+    background: none !important;
+}
+.feature-icon{
+    font-size: 5rem;
+    color:#f1c32a;
+}
+
+.feature-btn{
+    width: 20%;
+}
+.feature-btn-all{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
