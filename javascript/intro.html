@@ -1,0 +1,16 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <title>Intro Javascript</title>
+    </head>
+    <body>
+        <h1>Introduction to JS</h1>
+        <h3 id="time"></h3>
+        <script type="text/javascript">
+            function timer(){
+                document.getElementById("time").innerHTML = new Date();
+            }
+            setInterval(timer,1000);
+        </script>
+    </body>
+ </html>
