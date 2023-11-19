@@ -2,15 +2,22 @@
  <html>
     <head>
         <title>Intro Javascript</title>
+        <link rel="stylesheet" href="css/custom.css" />
+       
     </head>
     <body>
         <h1>Introduction to JS</h1>
-        <h3 id="time"></h3>
+        <h3 id="time" style="border: 1px solid #f00; height: 50px;"></h3>
         <script type="text/javascript">
             function timer(){
-                document.getElementById("time").innerHTML = new Date();
+                var timeDiv = document.getElementById("time");
+                timeDiv.innerHTML = new Date();
+                console.log(timeDiv.innerHTML);
+                // document.getElementById("time").innerHTML ="Test time"; //new Date();
             }
+            // timer();
             setInterval(timer,1000);
         </script>
+        
     </body>
  </html>
