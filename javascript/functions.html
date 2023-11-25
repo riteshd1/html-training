@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUnctions</title>
+   
+</head>
+
+<body>
+    <div> Num1: <input type="text" id="num1" name="num1" class="num1"  />
+    </div>
+    <div> Num2: <input type="text" id="num2" />
+    </div>
+    <div>
+        <button onclick="add()">Addition</button>
+    </div>
+    <div>
+        <button onclick="multiply()">Multiplication</button>
+    </div>
+    <div id="result"></div>
+   <script type="text/javascript">
+    function add(){
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+        let result = parseInt(num1) + parseInt(num2);
+        document.getElementById("result").innerHTML = result;
+    }
+    function multiply(){
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+        let result = parseInt(num1) * parseInt(num2);
+        document.getElementById("result").innerHTML = result;
+    }
+   </script>
+</body>
+
+</html>
