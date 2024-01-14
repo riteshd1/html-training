@@ -1,0 +1,70 @@
+ES5 Javascript:
+Varibales
+Arrays
+Strings
+Loops
+Operators 
+Events 
+
+ECMA script(ES):
+ES 6 Advance Javascript:
+
+ES 5:
+
+function addition(num1,num2){
+    var result = num1+num2;
+    return result;
+}
+
+var test = addition(10,20); //1sec
+
+Es6:
+var addition = (num1,num2)=>num1+num2; //0.5sec /Arrow functions
+
+ES 6 Features:
+Let Var(ES5) and Const:
+1. Let and var can be re-initialize or values can be re-assigned;
+2. Const values can not be re-initialized or can not be changed once its decalred;
+3. Const should have any value assigned, it can not be blank or null;
+4. Block scope 
+
+**Arrow Functions:**
+
+**Spread Operator***
+**For of***
+**map , filter, reduce**
+
+
+
+
+var a;
+var b="test";
+var arr = [1,2,3];
+var obj = {
+    [1,2,3]
+}; //JSON
+
+a=20;
+
+
+let a;
+let b='test';
+let arr =[];
+let obj={
+    [1,2,3]
+};
+a=20;
+sugkjd
+dslkds
+lskd
+a=30
+
+
+const a=20;
+const b='test';
+const arr =[];
+const obj={
+    [1,2,3]
+};
+a=30;
+ 
