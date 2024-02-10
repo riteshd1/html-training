@@ -1,0 +1,16 @@
+1. React is library
+2. Perfomance - one way binding, state management
+3. SPA - Single Page Applications
+4. Virtual DOM - Document object module
+
+Steps to Create a React App:
+
+1. NodeJS Install
+https://nodejs.org/dist/v20.11.0/node-v20.11.0-x64.msi
+TO verify installation: node -v 
+v18.17.1
+
+2. npx create-react-app myapp
+3. npm i -g npx
+4. cd my-app
+5. npm start
