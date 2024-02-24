@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 // import ExampleCarouselImage from 'components/ExampleCarouselImage';
 import img1 from "./images/1.jpg";
 import img2 from "./images/2.jpg";
 import img3 from "./images/3.jpg";
+import { Button } from 'react-bootstrap';
 function Slider() {
   return (
     <Carousel>
@@ -34,5 +35,22 @@ function Slider() {
     </Carousel>
   );
 }
+// const Slider = ()=>{
+//   let imageArr = [img1,img2,img3];
+//   const [sliderImage, setSliderImage] = useState(img1);
 
+//   const changeSlider = ()=>{
+//     let imageIndex = parseInt(Math.random() * 3);
+//     console.log("imageIndex",imageIndex);
+//     setSliderImage(imageArr[imageIndex]);
+//   }
+
+//   setInterval(changeSlider,5000);
+//   return (
+//     <>
+//       <img src={sliderImage}  />
+//       <Button onClick={changeSlider} >Change Slider</Button>
+//     </>
+//   )
+// }
 export default Slider;
