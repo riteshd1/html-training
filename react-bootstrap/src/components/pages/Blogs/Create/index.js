@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-const Create = () => {
+const Create = ({setBlogData}) => {
   const [name, setName] = useState();
   const [description, setDescription] = useState();
   // const name = "This is blog";
@@ -20,8 +20,10 @@ const Create = () => {
     let data = localData?JSON.parse(localData):[];
     data.push(formData);
     localStorage.setItem("data", JSON.stringify(data));
+    setBlogData(data);
   };
 
+  console.log("name",name);
   return (
     <>
       <h4>Create Blog</h4>
@@ -31,7 +33,7 @@ const Create = () => {
           name="name"
           placeholder="Enter blog title"
           value={name}
-          onChange={(e) => setName(e.target.value)}
+          onChange={(e)=>setName(e.target.value)}
         />
         <Form.Control
           type="text"
