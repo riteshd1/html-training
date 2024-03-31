@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import MyCalendar from "./MyCalendar";
+import MyEditor from "./MyEditor";
 const Create = ({setBlogData}) => {
   const [name, setName] = useState();
   const [description, setDescription] = useState();
+  const [formValues, setFormValue] = useState({name:'',description:''});
   // const name = "This is blog";
   // const description="This is blog description";
 
@@ -15,15 +18,22 @@ const Create = ({setBlogData}) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    let formData = { name: name, description: description };
+    if(formValues.name==''){
+      alert("Blog title is required!");
+    }
+    // let formData = { name: name, description: description };
     let localData = localStorage.getItem("data");
     let data = localData?JSON.parse(localData):[];
-    data.push(formData);
+    data.push(formValues);
     localStorage.setItem("data", JSON.stringify(data));
     setBlogData(data);
   };
 
-  console.log("name",name);
+  // useEffect(()=>{
+  //   alert('test')
+  // },[formValues.name])
+
+  console.log("formValues",formValues);
   return (
     <>
       <h4>Create Blog</h4>
@@ -32,16 +42,19 @@ const Create = ({setBlogData}) => {
           type="text"
           name="name"
           placeholder="Enter blog title"
-          value={name}
-          onChange={(e)=>setName(e.target.value)}
+          value={formValues.name}
+          onChange={(e) => setFormValue({...formValues, name:e.target.value})}
         />
         <Form.Control
           type="text"
           name="description"
           placeholder="Enter description "
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
+          value={formValues.description}
+          // onChange={(e) => setDescription(e.target.value)}
+          onChange={(e) => setFormValue({...formValues, description:e.target.value})}
         />
+        <MyEditor />
+        <MyCalendar />
         <Button variant="primary" type="submit">
           Save
         </Button>

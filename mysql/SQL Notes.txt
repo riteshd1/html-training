@@ -1,0 +1,20 @@
+
+1. To Create a Database:
+CREATE database nodejs_example;
+
+2. Create table
+CREATE table blogs (title varchar (200), description TEXT, publish_date DATE);
+
+3. Insert Data into table:
+INSERT into blogs (title, description, publish_date) VALUES ('This is blog title', 'This is blog description', '2024-03-31');
+
+4. To delete data
+DELETE from blogs where title is NULL
+
+5.To add column in table:
+ALTER table blogs ADD COLUMN id int(11);
+6. To Remove column from table:
+ALTER TABLE blogs DROP COLUMN id1;
+
+7. Delete table:
+DROP table blogs;
