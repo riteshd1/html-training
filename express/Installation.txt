@@ -1,0 +1,21 @@
+To Install express module:
+npm install express
+-----------------------------------------
+
+To install MySQL module:
+npm install mysql --save
+
+To create database:
+XAMPP start
+MySQL start
+phpmyadmin
+-----------------------------------------------
+Query to create a database:
+CREATE DATABASE expressjs_example;
+
+--------------------------------------
+To create a table
+CREATE table users (id int(10), name varchar(100), email varchar(100), phone varchar(12), gender char(1));
+---------------------------------------
+ To get the body from the request:
+ npm i body-parser
